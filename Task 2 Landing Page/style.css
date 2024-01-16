@@ -1,0 +1,581 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+.section-p1 {
+    padding: 40px 80px;
+}
+
+body {
+    width: 100%;
+    background-color: rgb(11, 11, 11);
+}
+
+
+#header {
+    background-color: rgb(11, 11, 11);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 80px;
+    position: sticky;
+    top: 0;
+    left: 0;
+}
+
+#navbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#header .logo {
+    width: 40%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+#header .logo .logo-img {
+    font-size: 30px;
+    color: red;
+    transform: rotate(90deg);
+}
+
+#header .logo .logo-name {
+    color: #fff;
+    font-size: 40px;
+    font-weight: 700;
+}
+
+#navbar li {
+    list-style: none;
+    padding-left: 40px;
+    position: relative;
+}
+
+#navbar li a {
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 16px;
+    color: #fff;
+    transition: 0.3s ease-in;
+}
+
+#navbar li a:hover {
+    color: chartreuse;
+}
+
+#navbar li a:hover,
+#navbar li a.active {
+    color: chartreuse;
+}
+
+#navbar li a:hover::after,
+#navbar li a.active::after {
+    content: '';
+    width: 40%;
+    height: 3px;
+    background-color: chartreuse;
+    position: absolute;
+    bottom: -4px;
+    left: 40px;
+
+}
+
+#close {
+    display: none;
+}
+
+#mobile {
+    display: none;
+    align-items: center;
+}
+
+#hero {
+    width: 100%;
+    height: 88vh;
+    background-image: url(Hero/gym1.jpg);
+    background-position: top 20% right 0;
+    background-size: cover;
+    padding: 0 90px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+#hero h4 {
+    color: red;
+}
+
+#hero h2 {
+    font-size: 40px;
+    letter-spacing: 2px;
+    line-height: 45px;
+    font-weight: 600;
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+#hero button {
+    font-size: 15px;
+    font-weight: 600;
+    padding: 8px 16px;
+    border-radius: 6px;
+    background-color: red;
+    color: #fff;
+    outline: none;
+    border: none;
+    cursor: pointer;
+}
+
+#hero button:hover {
+    background-color: rgb(27, 27, 27);
+}
+
+
+
+#classes {
+    text-align: center;
+}
+
+#classes h2 {
+    font-size: 40px;
+    color: #fff;
+}
+
+#classes .program-box {
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.program-box .card {
+    width: 30%;
+    background-color: rgb(45, 44, 44);
+    border-radius: 10px;
+    transition: scale 0.3s ease-in-out;
+}
+
+.program-box .card:hover {
+    transform: scale(1.02);
+    box-shadow: 20px 20px 30px transparent;
+}
+
+.program-box .card .img {
+    width: 100%;
+}
+
+.program-box .card .info {
+    color: #fff;
+    margin: 20px 20px;
+    text-align: left;
+}
+
+
+.program-box .card .info h3 {
+    font-size: 20px;
+    margin-top: 10px;
+}
+
+.program-box .card .info p {
+
+    padding: 20px 0;
+
+}
+
+
+#aboutUs .aboutUs-box {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    position: relative;
+
+}
+
+#aboutUs .img-box {
+    width: 50%;
+    margin-right: 40px;
+}
+
+#aboutUs .img-box img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+#aboutUs .details-box {
+    width: 50%;
+    padding: 0 15px;
+    color: #fff;
+}
+
+.details-box button {
+    font-size: 15px;
+    font-weight: 600;
+    padding: 8px 16px;
+    border-radius: 6px;
+    background-color: red;
+    color: #fff;
+}
+
+.details-box h2 {
+    margin-top: 15px;
+    font-size: 35px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    line-height: 35px;
+}
+
+.details-box p {
+    margin-top: 20px;
+}
+
+#blog {
+    text-align: center;
+}
+
+#blog h2 {
+    font-size: 45px;
+    color: #fff;
+    margin-bottom: 40px;
+}
+
+#blog .blog-box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.blog-box .blog-card {
+    width: 30%;
+    background-color: rgb(45, 44, 44);
+    border-radius: 10px;
+}
+
+.blog-box .blog-card .img {
+    width: 100%;
+}
+
+.blog-box .blog-card .info {
+    color: #fff;
+    padding: 20px 20px;
+    text-align: left;
+}
+
+
+.blog-box .blog-card .info h3 {
+    font-size: 25px;
+    margin-top: 10px;
+}
+
+.blog-box .blog-card .info p {
+    padding: 20px 0;
+}
+
+.blog-box .blog-card .info a {
+    margin-top: 15px;
+    color: rgb(24, 87, 180);
+    text-transform: uppercase;
+}
+
+footer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    background-color: rgb(16, 16, 16);
+}
+
+footer .box-1 {
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+    margin-bottom: 30px
+}
+
+footer .box-1 .logo {
+    width: 40%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+footer .box-1 .logo-img {
+    font-size: 30px;
+    color: red;
+    transform: rotate(90deg);
+}
+
+footer .box-1 .logo-name {
+    color: #fff;
+    font-size: 40px;
+    font-weight: 700;
+}
+
+footer .box-2 {
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+
+}
+
+footer .box-2 a {
+    text-decoration: none;
+    color: #fff;
+}
+
+footer .box-3 {
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+
+}
+
+.box-3 .information {
+    display: flex;
+}
+
+.box-3 .information i {
+    font-size: 20px;
+}
+
+.box-3 .information p {
+    padding-left: 10px;
+}
+
+footer .box-4 {
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+}
+
+footer .box-4 input {
+    width: 200px;
+    height: 35px;
+    border-radius: 6px;
+    outline: none;
+    padding-left: 10px;
+}
+
+footer .box-4 .social-media {
+    margin-top: 10px;
+}
+
+footer .box-4 .social-media i {
+    padding-left: 10px;
+    font-size: 25px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+
+@media (max-width: 850px) {
+
+    .section-p1 {
+        padding: 40px 40px;
+    }
+
+    #navbar {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        position: fixed;
+        top: 0;
+        right: -300px;
+        height: 100vh;
+        width: 250px;
+        box-shadow: 0 40px 60px rgba(0, 0, 0, 0.1);
+        background-color: #0a0a0a;
+        color: #fff;
+        padding: 80px 0 0 10px;
+        transition: 0.3s;
+    }
+
+    #navbar.active {
+        right: 0px;
+    }
+
+    #navbar li {
+        margin-bottom: 25px;
+    }
+
+    #mobile {
+        display: flex;
+        align-items: center;
+        font-size: 24px;
+        color: #fff;
+    }
+
+
+    #close {
+        display: flex;
+        text-decoration: none;
+        position: absolute;
+        top: 30px;
+        left: 30px;
+        color: #fff;
+        font-size: 24px;
+    }
+
+
+    #header .logo .logo-img {
+        font-size: 25px;
+    }
+
+    #header .logo .logo-name {
+        font-size: 35px;
+    }
+
+    #hero {
+        height: 80vh;
+        background-position: top 30% right 30%;
+        padding: 0 80px;
+    }
+
+
+    #program h2 {
+        font-size: 35px;
+    }
+
+    #program .program-box {
+        margin-top: 20px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .program-box .card {
+        width: 45%;
+        margin-top: 25px;
+    }
+
+    .details-box p {
+        margin-top: 20px;
+    }
+
+
+    .details-box h2 {
+        margin-top: 12px;
+        font-size: 30px;
+
+    }
+
+    .details-box p {
+        margin-top: 15px;
+    }
+
+
+    #blog h2 {
+        font-size: 35px;
+
+    }
+
+    #blog .blog-box {
+        margin-top: 20px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+
+    .blog-box .blog-card {
+        width: 45%;
+        margin-top: 25px;
+    }
+
+}
+
+@media (max-width: 550px) {
+
+    .section-p1 {
+        padding: 20px;
+    }
+
+    #header {
+        padding: 20px 40px;
+
+    }
+
+    #header .logo .logo-img {
+        font-size: 20px;
+    }
+
+    #header .logo .logo-name {
+        font-size: 30px;
+    }
+
+    #hero h2 {
+        font-size: 35px;
+        letter-spacing: 1px;
+        line-height: 35px;
+        margin-bottom: 20px;
+    }
+
+    #program .program-box {
+        padding: 20px;
+    }
+
+    .program-box .card {
+        width: 100%;
+    }
+
+
+    #blog h2 {
+        font-size: 35px;
+
+    }
+
+    #blog .blog-box {
+        padding: 20px;
+    }
+
+    .blog-box .blog-card {
+        width: 100%;
+    }
+
+
+}
+
+*/
