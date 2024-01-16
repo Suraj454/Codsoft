@@ -1,0 +1,153 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Jost', sans-serif;
+}
+
+.container {
+    height: 100vh;
+    width: 100%;
+    background-color: rgb(22, 22, 22);
+}
+
+.navbar {
+    width: 100%;
+    height: 70px;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 80px;
+}
+
+.navbar .logo {
+    font-size: 25px;
+    font-weight: 600;
+    color: black;
+}
+
+
+.navbar .right ul {
+    display: flex;
+}
+
+.navbar .right ul li {
+    list-style: none;
+}
+
+.navbar .right ul li a {
+    text-decoration: none;
+    padding: 6px 20px;
+    font-size: 18px;
+    border-radius: 6px;
+}
+
+.navbar .right ul li a:hover {
+    background-color: rgb(42, 41, 41);
+    color: white;
+}
+
+.Main {
+    height: 90vh;
+    color: white;
+    display: flex;
+    width: 100%;
+    align-items: center;
+}
+
+
+.Main .left {
+    width: 50%;
+    padding-left: 100px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+}
+
+.Main .left h4 {
+    text-transform: uppercase;
+}
+
+.Main .left h1 {
+    font-size: 40px;
+}
+
+.Main .left h1 span {
+    color: rgb(219, 18, 55);
+}
+
+
+.Main .left p {
+    width: 90%;
+    letter-spacing: 0.8px;
+    line-height: 25px;
+    font-size: 18px;
+}
+
+.Main .left .btn {
+    width: 40%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+
+.Main .left .btn button {
+    font-size: 16px;
+    width: 120px;
+    height: 35px;
+    border-radius: 5px;
+    cursor: pointer;
+    border: none;
+}
+
+.Main .left .btn button:hover {
+    background-color: rgb(18, 97, 223);
+}
+
+.Main .left .social {
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.Main .left .social .ig {
+    font-size: 30px;
+}
+
+.Main .left .social .ig:hover {
+    color: rgb(220, 12, 95);
+}
+
+.Main .left .social .link {
+    font-size: 30px;
+}
+
+.Main .left .social .link:hover {
+    color: blue;
+}
+
+.Main .left .social .tw {
+    font-size: 30px;
+}
+
+.Main .left .social .tw:hover {
+    color: rgb(49, 133, 236);
+}
+
+.Main .right {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.Main .right img {
+    width: 55%;
+    height: 55%;
+    border-radius: 50%;
+}
